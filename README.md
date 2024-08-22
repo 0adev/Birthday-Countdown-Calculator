@@ -2,6 +2,8 @@
 
 <img src="./images/Screenshot 2024-08-22 212541.jpg"/>
 
+<a href="https://inspiring-crisp-168de5.netlify.app/">birthday-countdown-calculator🔗</a>
+
 ## Overview
 
 The Birthday Countdown Calculator is a JavaScript-based tool that calculates the remaining time until your next birthday. By inputting your birth date, the calculator displays the number of days, hours, minutes, and seconds left until the next occurrence of your birthday.
