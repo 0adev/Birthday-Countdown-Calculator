@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Counter Down Timer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="birthday-calc">
+        <div class="info">
+          <h1>Birthday Countdown Calculator</h1>
+          <p>
+            Enter below your birthday and our calculator will show you exact
+            number of days left to your nearest birthday
+          </p>
+        </div>
+
+        <div class="form-container">
+          <form id="form">
+            <div class="field-container">
+              <input type="date" id="date" />
+            </div>
+            <button type="submit" id="button">Calculate</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="result">
+        <h2>Your Next Birthday 🎉</h2>
+        <div class="timer">
+          <div class="timer-el days-c">
+            <p class="days-el" id="days">0</p>
+            <span>Days</span>
+          </div>
+          <div class="timer-el hours-c">
+            <p class="hours-el time" id="hours">0</p>
+            <span>Hours</span>
+          </div>
+          <div class="timer-el minutes-c">
+            <p class="minutes-el time" id="minutes">0</p>
+            <span>Minutes</span>
+          </div>
+          <div class="timer-el seconds-c">
+            <p class="seconds-el time" id="seconds">0</p>
+            <span>Seconds</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

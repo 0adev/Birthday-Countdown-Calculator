@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* utilities */
+.error {
+  color: rgb(255, 99, 99);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  /* display: none; */
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+p,
+span {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./images/scott-lord.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  place-content: center;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  text-wrap: balance;
+}
+
+.container {
+  width: min(100%, 40rem);
+  margin: 0 auto;
+  display: grid;
+  gap: 3.5rem;
+  background-color: rgba(255, 0, 0, 0);
+  backdrop-filter: blur(50px);
+  border-radius: 30px;
+  padding-block: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.container::before,
+.container::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -999;
+}
+
+.container::before {
+  background-color: rgba(167, 84, 84, 0.149);
+  top: 0;
+  right: 0;
+}
+.container::after {
+  background-color: rgba(213, 169, 169, 0.055);
+  bottom: 0;
+  left: 0;
+}
+
+.container p {
+  font-weight: 500;
+}
+
+.container .birthday-calc {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.container .birthday-calc h1 {
+  font-size: clamp(1.5rem, 6vw, 3rem);
+}
+
+.container .birthday-calc #date {
+  all: unset;
+  width: 200px;
+  padding: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(0.875rem, 3vw, 1rem);
+  color: #202020;
+  background-color: #fff;
+  cursor: text;
+}
+
+.container .birthday-calc #button {
+  all: unset;
+  background-color: #fff;
+  color: #202020;
+  font-weight: 500;
+  padding: 0.5rem 0.875rem;
+  cursor: pointer;
+  transition: 200ms ease;
+}
+
+.container form {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+
+.container .result {
+  display: none;
+}
+
+.container .result .timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: rgba(140, 97, 97, 0.373);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.container .result h2 {
+  font-size: clamp(1rem, 5vw, 2.25rem);
+  margin-bottom: 1rem;
+}
+
+.container .result p {
+  font-size: clamp(1.5rem, 5vw, 2.25rem);
+}
+
+.container .result span {
+  font-size: clamp(0.875rem, 4vw, 1.5rem);
+}
+
+/* Hovering style */
+.birthday-calc #button:hover {
+  background-color: transparent;
+  outline: 1px solid #fff;
+  color: #fff;
+}
+
+/* media queries */
+@media (max-width: 26.875rem) {
+  .container {
+    width: calc(100% - 2rem);
+  }
+
+  .container .timer {
+    gap: 1rem;
+  }
+}
