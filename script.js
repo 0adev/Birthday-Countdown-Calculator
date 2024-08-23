@@ -44,7 +44,6 @@ function showNextBirthday(e) {
 
 function countDown(nextBirthday) {
   const currentTime = new Date();
-  console.log(currentTime, typeof currentTime);
   const totalSeconds = Math.floor((nextBirthday - currentTime) / 1000);
 
   const seconds = Math.floor(totalSeconds % 60);
